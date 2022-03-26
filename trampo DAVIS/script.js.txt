@@ -1,0 +1,17 @@
+class Moedas {
+  dolar;
+  real;
+  
+  constructor() {
+    this.dolar = 4.74
+}
+  converterRealDolar() {
+    this.real = document.getElementById("real").value
+    const ValorEmDolar = 
+          parseFloat(this.real) / this.dolar;
+    document.getElementById("resultado").innerText = ValorEmDolar;
+    
+    
+  }
+ }
+const moeda = new Moedas();
